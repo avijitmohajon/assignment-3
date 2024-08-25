@@ -24,11 +24,16 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#ABEF5F',
-                        secondary: '#F4F4F4',
+                        'primary': '#ABEF5F',
+                        'bgcolor': '#F4F4F4',
+                        'headerbg1': 'rgb(255, 255, 255)',
+                        'headerbg2': 'rgba(255, 255, 255, 0)',
                     },
                     fontFamily: {
-                        manrope: "Manrope",
+                        manrope: 'Manrope',
+                    },
+                    backgroundImage: {
+                        'texture': "url('./assets/bg.jpg')",
                     },
                 },
             },
@@ -39,19 +44,86 @@
 
 </head>
 
-<body>
+<body class="font-manrope">
     <!-- Header part -->
 
-    <Header>
-        <h2 class="bg-secondary h-56">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora, officia pariatur quidem temporibus cumque enim repellendus! Aliquid, rem consectetur.
-        </h2>
+    <Header class="container mx-auto md:px-3 lg:px-6 md:pt-5">
+        <nav>
+            <div class="navbar bg-gradient-to-l from-headerbg1 to-headerbg2">
+                <!-- navbar start -->
+                <div class="navbar-start gap-2">
+                    <!-- Arrow Logo  -->
+                    <div>
+                        <i
+                            class="fa-solid fa-arrow-right-long -rotate-45 bg-primary rounded-full h-7 w-7 inline-flex items-center justify-center"></i>
+                    </div>
+                    <!-- Text Logo -->
+                    <a href="#" class="text-2xl font-extrabold">Rinterio</a>
+                </div>
+                <!-- navbar center -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-gray-500 ">
+                        <li class="text-black font-semibold"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- navbar end -->
+                <div class="navbar-end gap-3">
+                    <!-- search link -->
+                    <div class="hidden md:block">
+                        <i
+                            class="fa-solid fa-magnifying-glass bg-slate-100 rounded-full h-10 w-10 inline-flex items-center justify-center"></i>
+                    </div>
+                    <!-- Cart link -->
+                    <div class="hidden md:block">
+                        <i
+                            class="fa-solid fa-cart-shopping bg-slate-100 rounded-full h-10 w-10 inline-flex items-center justify-center"></i>
+                    </div>
+                    <!-- Book consult Button -->
+                    <a class="btn bg-primary hover:bg-primary rounded-3xl hidden md:flex">
+                        <h5>Book Consult</h5>
+                        <i
+                            class="fa-solid fa-arrow-right-long -rotate-45 text-white bg-black rounded-full h-7 w-7 inline-flex items-center justify-center"></i>
+                    </a>
+
+                    <div class="dropdown">
+
+                        <div tabindex="0" role="button" class=" lg:hidden">
+                            <i
+                                class="fa-solid fa-bars bg-slate-100 rounded-full h-10 w-10 inline-flex items-center justify-center"></i>
+                        </div>
+
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+
+                            <li class="md:hidden"><a>Search</a></li>
+                            <li class="md:hidden"><a>Cart</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
     </Header>
 
 
     <!-- Main part -->
-    <main></main>
+    <main class=" bg-bgcolor ">
+
+    </main>
+
     <!-- Footer part -->
     <footer></footer>
+
 </body>
 
 </html>
