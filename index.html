@@ -280,10 +280,10 @@
 
         <!-- Our Latest Portfolio -->
         <section
-            class="container items-center justify-center lg:flex space-y-8 lg:space-y-0 lg:gap-8 px-2 lg:px-10 mx-auto pt-8 lg:pt-20 md:pb-12 lg:pb-16 bg-white">
+            class="container items-center justify-center lg:flex space-y-8 lg:space-y-0 lg:gap-8 px-2 lg:px-10 mx-auto pt-8 lg:pt-20 pb-12 lg:pb-16 bg-white">
             <div>
                 <!-- Upper text -->
-                <div class="flex flex-col items-center justify-center text-center gap-8">
+                <div class="flex flex-col items-center justify-center text-center gap-1 md:gap-8">
                     <!--Exploring our latest work text-->
                     <div class=" gap-3 bg-white rounded-3xl py-3 px-4 inline-block ">
                         <i class="fa-solid fa-arrow-right-long"></i>
@@ -293,7 +293,8 @@
                     <!-- Title of this section -->
                     <div class="space-y-5">
                         <h2 class="text-xl md:text-2xl lg:text-4xl font-bold">Our Latest Portfolio</h2>
-                        <p class="text-sm md:text-lg font-medium text-gray-500">The barn house captivates with its blend
+                        <p class="text-sm md:text-lg font-medium text-gray-500  pb-5">The barn house captivates with its
+                            blend
                             of
                             rustic charm and modern.</p>
                     </div>
@@ -396,6 +397,48 @@
                     </div>
 
                 </div>
+        </section>
+
+
+        <!-- form section  -->
+
+        <section
+            class="container items-center justify-center lg:flex space-y-8 lg:space-y-0 lg:gap-8 px-2 lg:px-10 mx-auto pt-8 lg:pt-10 md:pb-12 lg:pb-16 bg-texture bg-cover">
+
+
+            <div>
+                <div class="text-center">
+                    <button class="btn bg-primary bg-opacity-50 hover:bg-primary hover:bg-opacity-50 rounded-full mx-auto"><i
+                            class="fa-solid fa-arrow-right-long"></i>Let's Connect </button>
+                    <h1 class="text-4xl font-extrabold my-4">Let's Discuss Next Project</h1>
+                    <p class="font-semibold inline-block text-sm capitalize mb-4">The barn house captivates with its
+                        blend of rustic charm
+                        <br> and modern sophistication, featuring weathered wood.
+                    </p>
+
+                </div>
+
+                <form action=".php">
+
+
+                    <div class="grid lg:grid-cols-2 gap-5 lg:mx-auto">
+                        <input type="text" placeholder="First Name*"
+                            class="input input-bordered rounded-full max-w-md" />
+                        <input type="text" placeholder="Last Name*"
+                            class="input input-bordered rounded-full max-w-md" />
+                        <input type="text" placeholder="Phone Number*"
+                            class="input input-bordered rounded-full max-w-md" />
+                        <input type="text" placeholder="Email Number*"
+                            class="input input-bordered rounded-full max-w-md" />
+                        <input type="text" placeholder="Write your message here"
+                            class="input input-bordered lg:col-span-2 rounded-xl h-36 lg:max-w-4xl" />
+                        <a class="btn bg-primary hover:bg-primary  rounded-full lg:col-span-2">Send Mail<i
+                                class="fa-solid fa-arrow-right-long bg-black text-white rounded-full -rotate-45 p-2"></i></a>
+
+                    </div>
+                </form>
+            </div>
+
         </section>
     </main>
 
